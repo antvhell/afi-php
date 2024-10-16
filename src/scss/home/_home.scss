@@ -1,0 +1,49 @@
+@use 'home/variables' as v;
+@use 'home/mixins' as m;
+
+
+.container {
+    max-width: 1400px !important;
+}
+
+footer{
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.imglogo{
+    width: 250px !important;
+    text-align: center;
+}
+
+.pluma{
+    width: 26px !important;
+    cursor: pointer;
+}
+
+.text-charis{
+    font-family: CharisSILWNormal;
+    font-size: 18px;
+  }
+
+.nota {
+    cursor: pointer;
+    color: #006699;
+  }
+
+.textafi {
+    font-family: CharisSILWNormal;
+}
+
+.botones {
+    margin-right: 5px;
+    font-family: CharisSILWNormal, sans-serif !important;
+  }
+
+a {
+    text-decoration: none !important;
+}
+
+.transfer-card p {
+    margin: 0 0 3px;
+}

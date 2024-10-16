@@ -1,0 +1,620 @@
+@use 'home/variables' as v;
+@use 'home/mixins' as m;
+
+img {
+    max-width: 100%;
+    /* display: block; */
+  }
+  .text-charis {
+    font-family: CharisSILWNormal;
+    font-size: 18px;
+  }
+  .card-text {
+    text-align: justify;
+  }
+  
+  .lef {
+    width: 200px;
+    margin: 10px;
+  }
+  
+  .pluma {
+    width: 26px;
+    cursor: pointer;
+  }
+  
+  .textafi{
+    font-family: CharisSILWNormal;
+    font-size: 18px;
+  }
+  
+  .nota {
+    cursor: pointer;
+    color: #006699;
+  }
+  
+  .btn-play {
+    color: red;
+    cursor: pointer;
+  }
+  
+  .tall {
+    font-size: 20px;
+  }
+  
+  .parrafo-inline {
+    display: inline;
+  }
+  
+  .prologo {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .botones {
+    margin-right: 5px;
+    font-family: CharisSILWNormal, sans-serif !important;
+  }
+  
+  .video {
+    border: #000 1px solid;
+    width: 100%;
+  }
+  
+  .flecha {
+    margin: 6px;
+    cursor: pointer;
+  }
+  
+  /* Estilos de Dragula */
+  /* Estilos de draagula */
+  
+  #drag-elements,
+  #drag-elements2,
+  #drag-elements3,
+  #drag-elements4,
+  #drag-elements5 {
+    display: block;
+    /* background-color: #f8f9fa; */
+    border-radius: 5px;
+    min-height: 150px;
+    margin: 0 auto;
+    /* padding: 2em; */
+    font-family: CharisSILWNormal, sans-serif !important;
+  }
+  
+  #drag-elements > div,
+  #drag-elements2 > div,
+  #drag-elements3 > div,
+  #drag-elements4 > div,
+  #drag-elements5 > div {
+    text-align: center;
+    float: left;
+    padding: 10px;
+    margin: 0 1em 1em 0;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    /* border-radius: 100px; */
+    border: 2px solid #ececec;
+    border-radius: 5px;
+    background: #f7f7f7;
+    transition: all 0.5s ease;
+    font-family: CharisSILWNormal, sans-serif !important;
+  }
+  
+  #drag-elements > div:active,
+  #drag-elements2 > div:active,
+  #drag-elements3 > div:active,
+  #drag-elements4 > div:active,
+  #drag-elements5 > div:active {
+    -webkit-animation: wiggle 0.3s 0s infinite ease-in;
+    animation: wiggle 0.3s 0s infinite ease-in;
+    opacity: 0.6;
+    border: 2px solid #000;
+    font-family: CharisSILWNormal, sans-serif !important;
+  }
+  
+  #drag-elements > div:hover,
+  #drag-elements2 > div:hover,
+  #drag-elements3 > div:hover,
+  #drag-elements4 > div:hover,
+  #drag-elements5 > div:hover {
+    /* border: 2px solid #f8f9fa; */
+    background-color: #e5e5e5;
+    cursor: pointer;
+    font-family: CharisSILWNormal, sans-serif !important;
+  }
+  
+  #drop-target,
+  #drop-target2,
+  #drop-target3,
+  #drop-target4,
+  #drop-target5 {
+    border: 3px dashed #e5e5e5;
+    border-radius: 5px;
+    min-height: 150px;
+    margin: 0 auto;
+    /* margin-top: 10px; */
+    padding: 1em;
+    /* display: block; */
+    text-align: center;
+    font-family: CharisSILWNormal, sans-serif !important;
+    cursor: pointer;
+  }
+  
+  #drop-target > div,
+  #drop-target2 > div,
+  #drop-target3 > div,
+  #drop-target4 > div,
+  #drop-target5 > div {
+    transition: all 0.5s;
+    text-align: center;
+    float: left;
+    padding: 1em;
+    margin: 0 1em 1em 0;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    /* border: 2px solid skyblue; */
+    background: #f7f7f7;
+    transition: all 0.5s ease;
+    font-family: CharisSILWNormal, sans-serif !important;
+    cursor: pointer;
+  }
+  
+  #drop-target > div.mal,
+  #drop-target2 > div.mal,
+  #drop-target3 > div.mal,
+  #drop-target4 > div.mal,
+  #drop-target5 > div.mal {
+    transition: all 0.5s;
+    text-align: center;
+    float: left;
+    padding: 10px;
+    margin: 0 1em 1em 0;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    /* border: 2px solid skyblue; */
+    background: red;
+    color: white;
+    transition: all 0.5s ease;
+    font-family: CharisSILWNormal, sans-serif !important;
+    cursor: pointer;
+  }
+  #drop-target > div.bien,
+  #drop-target2 > div.bien,
+  #drop-target3 > div.bien,
+  #drop-target4 > div.bien,
+  #drop-target5 > div.bien {
+    transition: all 0.5s;
+    text-align: center;
+    float: left;
+    padding: 10px;
+    margin: 0 1em 1em 0;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    /* border: 2px solid skyblue; */
+    background: green;
+    color: white;
+    transition: all 0.5s ease;
+    font-family: CharisSILWNormal, sans-serif !important;
+    cursor: pointer;
+  }
+  
+  .box.incorrecto {
+    background: #dc3545 !important;
+    color: #fff !important;
+  }
+  
+  .box.correcto {
+    background: #198754 !important;
+    color: #fff;
+    z-index: 1000;
+  }
+  
+  .links-items {
+    text-decoration: none;
+    fill: #0d6efd !important;
+  }
+  a {
+    color: var(--bs-link-color);
+    text-decoration: underline;
+  }
+  
+  .st8 {
+    fill: none;
+    stroke: #0d6efd;
+    stroke-width: 0.25;
+    stroke-miterlimit: 10;
+  }
+  
+  .box {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 15px;
+    margin: 8px;
+    background: #dc3545;
+    font-size: 18px;
+    background-color: #efefef;
+    border-radius: 3px;
+    box-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    font-family: CharisSILWNormal;
+  }
+  
+  .droparea {
+    border: 3px dashed #e5e5e5;
+    border-radius: 5px;
+    min-height: 150px;
+    padding: 1em;
+  }
+  /* Fin de estilos de Dragula */
+  
+  /* ejercicio 5 */
+  
+  .syllabary {
+    table-layout: fixed;
+    border: 1em solid #fefefe;
+    direction: rtl;
+    width: 80%;
+  }
+  
+  .syllabary td > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .syllabary td .hiragana,
+  .syllabary td .katakana {
+    font-size: 19.6px;
+    line-height: 28px;
+    height: 28px;
+    width: 50%;
+    -webkit-transition: background 0.3s;
+    -o-transition: background 0.3s;
+    transition: background 0.3s;
+    background-color: red;
+  }
+  
+  .syllabary td .hiragana.over,
+  .syllabary td .katakana.over {
+    -webkit-box-shadow: inset 0 0 0 2px #333;
+    box-shadow: inset 0 0 0 2px #333;
+  }
+  
+  .syllabary td .hiragana.error,
+  .syllabary td .katakana.error {
+    -webkit-transition: background 0s;
+    -o-transition: background 0s;
+    transition: background 0s;
+    background: #ff6b6b;
+  }
+  
+  .syllabary td .romaji {
+    line-height: 28px;
+    width: 100%;
+    color: #333333;
+    background: #eee;
+  }
+  
+  .kanas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    font-family: CharisSILWnormal !important;
+  }
+  
+  .kanas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 80%;
+    font-family: CharisSILWnormal !important;
+  }
+  
+  .kanas span {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 28px;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    margin: 0.2em;
+    cursor: pointer;
+  }
+  
+  .kanas span.dragging {
+    opacity: 0.5;
+  }
+  
+  .hiragana,
+  [data-type="hiragana"] {
+    background: #efefef !important;
+    margin: 4px !important;
+    color: #000 !important;
+    font-family: CharisSILWnormal;
+    text-align: center;
+  }
+  
+  .katakana,
+  [data-type="katakana"] {
+    background: #efefef !important;
+    color: #000 !important;
+    font-family: CharisSILWnormal;
+    text-align: center;
+  }
+  
+  @media all and (max-width: 800px) {
+    .syllabary td .hiragana,
+    .syllabary td .katakana {
+      width: 100%;
+    }
+  }
+  
+  @media all and (max-width: 570px) {
+    .syllabary {
+      width: 100%;
+      border: none;
+    }
+  }
+  
+  .letras {
+    text-align: center;
+    background: #dc3545;
+    background-color: #efefef;
+    border-radius: 3px;
+    /* box-shadow:0 .5px 1px rgba(0,0,0,.3); */
+    cursor: pointer;
+    font-family: CharisSILWNormal;
+    font-size: 18px;
+  }
+  table {
+    border-collapse: separate !important;
+  }
+  
+  /* transcripcion */
+  .texto {
+    height: 20px;
+    font-size: 28px;
+    font-family: CharisSILWNormal, sans-serif;
+  }
+  
+  #formulario {
+    font-family: CharisSILWNormal, sans-serif;
+    width: 65%;
+    margin: 0 auto;
+  }
+  @media (max-width: 576px) {
+    #formulario {
+      width: 100% !important;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    #formulario {
+      width: 40% !important;
+    }
+  }
+  
+  .btn-secondary {
+    margin: 2px;
+  }
+  
+  .glosa {
+    visibility: hidden;
+    font-family: CharisSILWNormal, sans-serif;
+  }
+  
+  #glosa {
+    font-family: CharisSILWNormal, sans-serif;
+    font-size: 24px;
+  }
+  
+  #transcripcion {
+    font-family: CharisSILWNormal, sans-serif;
+    font-size: 24px;
+    color: red;
+    visibility: hidden;
+  }
+  
+  #audio {
+    font-size: 18px;
+  }
+  
+  #ejercicios {
+    font-size: 18px;
+  }
+  
+  /*Inicio de Memorama */
+  
+  .memory-game {
+    width: 900px;
+    width: 1400px;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+    /* margin-bottom: 450px; */
+  }
+  
+  .memory-game2 {
+    /* width: 900px; */
+    width: 1400px;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+    margin-bottom: 450px;
+  }
+  
+  .memory-game3 {
+    /* width: 900px; */
+    width: 1400px;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+    margin-bottom: 650px;
+  }
+  .memory-card {
+    /* width: calc(25% - 10px); */
+    width: calc(15% - 10px);
+    height: calc(35% - 10px);
+    /* height: calc(33.333% - 10px); */
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
+  
+  .memory-card:active {
+    transform: scale(0.97);
+    transition: transform 0.2s;
+  }
+  
+  .memory-card.flip {
+    transform: rotateY(180deg);
+  }
+  
+  .front-face,
+  .back-face {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    border-radius: 5px;
+    background: #f8f9fa;
+    backface-visibility: hidden;
+  }
+  
+  .front-face {
+    transform: rotateY(180deg);
+  }
+  /* Fin de estilos memorama */
+  
+  /* Gráfica */
+  .st0 {
+    fill: none;
+    stroke: #000000;
+    stroke-width: 0.25;
+    stroke-miterlimit: 10;
+  }
+  .st1 {
+    font-family: "Times-Roman";
+  }
+  .st2 {
+    font-size: 5px;
+  }
+  .st3 {
+    font-family: "MyriadPro-Regular";
+  }
+  .st4 {
+    stroke: #000000;
+    stroke-width: 0.25;
+    stroke-miterlimit: 10;
+  }
+  .st5 {
+    font-size: 7px;
+  }
+  .st6 {
+    fill: #0d6efd;
+  }
+  .st7 {
+    font-size: 8px;
+  }
+  .st8 {
+    fill: none;
+    stroke: #0d6efd;
+    stroke-width: 0.25;
+    stroke-miterlimit: 10;
+  }
+  
+  .vocalesVisible {
+    fill: #000000;
+  }
+  
+  .vocal {
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: normal;
+  }
+  
+  .links-items {
+    text-decoration: none;
+    fill: #0d6efd !important;
+  }
+  
+  #texto {
+    font-family: CharisSILWNormal, sans-serif;
+  }
+  
+  .flecha {
+    cursor: pointer;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .flecha:hover {
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #f8f9fc;
+  }
+  
+  @media (max-width: 576px) {
+    .flecha {
+      padding: 2px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .backstyle {
+      margin-bottom: 20px;
+    }
+  }
+  
+  .oscilogramas {
+    width: 100%;
+  }
+  
+  .textVocales,
+  .pointVocales {
+    fill: #0a58ca !important;
+    cursor: pointer;
+  }
+  
+  .audio-container {
+    width: 300px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+
+  .alineado {
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }

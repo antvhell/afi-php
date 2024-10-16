@@ -1,0 +1,1 @@
+const video=document.getElementById("videoplay");function cambiarVelocidad(a){video.playbackRate=a}cambiarVelocidad(.25);

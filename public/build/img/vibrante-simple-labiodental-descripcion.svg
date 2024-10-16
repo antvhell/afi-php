@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 267.7 303.2">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #68432b;
+        font-family: Times-Roman, Times;
+        font-size: 54px;
+        isolation: isolate;
+      }
+    </style>
+  </defs>
+  <text class="cls-1" transform="translate(28.6 121)"><tspan x="0" y="0">percusiva</tspan></text>
+  <text class="cls-1" transform="translate(13.9 195)"><tspan x="0" y="0">labiodental</tspan></text>
+</svg>

@@ -1,0 +1,76 @@
+@use 'home/variables' as v;
+@use 'home/mixins' as m;
+
+.formulario {
+    margin-top: 5rem;
+    margin: 0 auto;
+    @include m.desktop {
+        width: 60%;
+    }
+}
+
+.campo {
+    display: flex;
+    // margin-bottom: 2rem;
+    align-items: center;
+    label{
+        flex: 0 0 7rem;
+    }
+    input{
+        flex: 1;
+        border: 1px solid v.$gris;
+        padding: calc(v.$separacion / 8);
+        border-radius: .5rem;
+    }
+}
+
+.acciones {
+    margin-top: v.$separacion;
+    @include m.tablet{
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    a {
+        color: v.$negro;
+        display: block;
+        margin-bottom: calc(v.$separacion / 2);
+        text-align: center;
+    }
+}
+
+.boton {
+    align-items: end;
+}
+
+
+.alerta {
+    padding: calc(v.$separacion / 6);
+    color: v.$blanco;
+    display: block;
+    // margin-bottom: 2rem;
+    text-align: center;
+    font-weight: v.$bold;
+    text-transform: uppercase;
+    border-radius: .5rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    @include m.desktop {
+        width: 60%;
+    }
+
+
+
+    &.error {
+        background-color: v.$rojo;
+    }
+
+    &.exito {
+        background-color: v.$verde;
+    }
+
+}

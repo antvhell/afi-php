@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 267.7 303.2">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #000;
+        font-family: Times-Roman, Times;
+        font-size: 60px;
+        isolation: isolate;
+      }
+    </style>
+  </defs>
+  <text class="cls-1" transform="translate(21.8 122.4)"><tspan x="0" y="0">percusiva</tspan></text>
+  <text class="cls-1" transform="translate(42 196.4)"><tspan x="0" y="0">alveolar</tspan></text>
+</svg>

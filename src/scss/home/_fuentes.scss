@@ -1,0 +1,30 @@
+/* Fuentes */
+@font-face {
+  font-family: CharisSILWNormal;
+  // src: url(../fonts/CharisSIL-R.ttf);
+  src: url(../../build/fonts/CharisSIL-R.ttf);
+}
+
+//   /Users/antoniovh/Cursos/LEF/AFI-PHP/public/build/fonts/CharisSIL-B.ttf
+
+@font-face {
+  font-family: CharisSILWItalic;
+  font-style: italic;
+  // src: url(../fonts/CharisSIL-I.ttf);
+  src: url(../../build/fonts/CharisSIL-I.ttf);
+}
+
+@font-face {
+  font-family: CharisSILWBold;
+  font-weight: bold;
+  // src: url(../fonts/CharisSIL-BI.ttf);
+  src: url(../../build/fonts/CharisSIL-BI.ttf);
+}
+
+@font-face {
+  font-family: CharisSILWBolItalic;
+  font-weight: bold;
+  font-style: italic;
+  // src: url(../fonts/CharisSIL-B.ttf);
+  src: url(../../build/fonts/CharisSIL-B.ttf);
+}

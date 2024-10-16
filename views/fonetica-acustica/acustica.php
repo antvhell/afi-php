@@ -1,0 +1,38 @@
+<!-- Header -->
+<?php include_once __DIR__ . "/../templates/header.php"; ?>
+
+
+
+<main class="flex-grow-1 container">
+            <?php include_once __DIR__ . "../../fonetica-acustica/blocks/modales.php"; ?>
+        <div class="row animated fadeIn fast mt-4">
+            <?php include_once __DIR__ . "../../fonetica-acustica/blocks/ejercicios.php"; ?>
+          <div class="col-sm">
+            <h2 class="fw-light">Acústica</h2>
+            <p class="card-text mt-4">En la producción de cualquier sonido, la actividad de las cuerdas vocales y los distintos articuladores del aparato fonador cambian de posición formando cavidades de volumen y formas diferentes en la región supraglótica. Las cavidades así formadas hacen las veces de resonadores que realzan o reducen ciertas frecuencias, dependiendo de su postura. La estructura de los sonidos se puede estudiar tanto en un <a class="link-primary text-decoration-none text-charis" href="" data-bs-toggle="modal" ="" data-bs-target="#exampleModalCenter10">oscilograma</a>, donde se despliegan los distintos tipos de onda; las variaciones de la amplitud (eje vertical) y el tiempo (eje horizontal), como en un <a class="link-primary text-decoration-none text-charis" href="" data-bs-toggle="modal" ="" data-bs-target="#exampleModalCenter9">espectrograma</a>, en el que se despliegan, sobre el eje vertical, las frecuencias y, sobre el eje horizontal, el tiempo que dura el sonido en cuestión. Los sonidos del lenguaje producen ondas sonoras de varios tipos:</p>
+            <p>- Quietas</p>
+            <p>- Fugaces</p>
+            <p>- Periódicas</p>
+            <p>- Azarosas</p>
+            <p class="card-text">Las ondas <b>quietas</b> y las ondas <b>fugaces</b> se producen durante la articulación de cualquier oclusiva sorda. Las ondas quietas corresponden a la fase de obstrucción total del aire y las fugaces resultan al momento de soltar la oclusión. Estas dos fases se visualizan en el oscilograma de <a class="link-primary text-decoration-none text-charis" href="" data-bs-toggle="modal" ="" data-bs-target="#exampleModalCenter1">[k]</a>. El tramo de quietud ondulatoria es silente debido a la <b>ausencia de vibraciones</b> de las cuerdas, mientras que el correspondiente a la onda fugaz presenta un movimiento de amplitud abrupta que disminuye muy pronto. Este tramo de la onda fugaz constituye el VOT (<cite>Voice Onset Time</cite> por sus siglas en inglés), es decir, el tiempo que transcurre entre la soltura y el inicio de la sonoridad del segmento siguiente. En las lenguas, hay una correlación entre el momento del cierre, el VOT y el punto de articulación. Al trasladar estos dos parámetros en <span class="text-charis">[p, t, k]</span>, la tendencia es que, a partir de la bilabial, la duración de la onda quieta va decreciendo, mientras que el VOT va en aumento, es decir, <span class="text-charis">[p]</span> tendrá un cierre más largo que <span class="text-charis">[t]</span> y que <span class="text-charis">[k]</span>, y <span class="text-charis">[k]</span> tendrá un VOT mayor que <span class="text-charis">[p] y [t]</span>.</p>
+            <p class="card-text">Las ondas <b>periódicas</b> resultan de la producción de cualquier sonido sonoro, incluyendo oclusivas, líquidas, nasales, vocales, etc. En ellas, los ciclos se repiten a lo largo del tiempo, esto se debe a que la fuente que los produce es la vibración periódica de las cuerdas vocales. La frecuencia a la que se mueven las cuerdas es la frecuencia fundamental (F0), que se percibe como tonía. Las lenguas que hacen uso del F0 a nivel palabra, o morfema son lenguas <a class="link-primary text-decoration-none" href="" data-bs-toggle="modal" ="" data-bs-target="#exampleModalCenter2">tonales</a>, en ellas la cadena de segmentos es la misma, pero el significado cambia según la altura del F0. En las lenguas <a class="link-primary text-decoration-none" href="" data-bs-toggle="modal" ="" data-bs-target="#exampleModalCenter3">acentuales</a>, el F0 suele ser el correlato acústico de la prominencia, es decir del acento.</p>
+            <p class="card-text primeralinea">La forma de onda periódica se visualiza en el oscilograma del fragmento de la vocal <a class="link-primary text-decoration-none text-charis" href="" data-bs-toggle="modal" ="" data-bs-target="#exampleModalCenter4">[a]</a>, en el cual los ciclos de apertura y cierre de las cuerdas se marcan con líneas punteadas verticales. Son ondas complejas, compuestas por varias ondas simples; la primera de ellas se llama frecuencia fundamental y las siguientes son múltiplos de ésta.</p>
+            <p class="card-text primeralinea">Las oclusivas sonoras -sonidos producidos mediante el cierre total de la salida de aire y la vibración de las cuerdas- producen ondas periódicas en las cuales la amplitud va decreciendo. Así lo muestra el oscilograma de <a class="link-primary text-decoration-none text-charis" href="" data-bs-toggle="modal" ="" data-bs-target="#exampleModalCenter5">[d]</a>. En estos sonidos, mientras más dure el cierre, mayor probabilidad hay de que la sonoridad se extinga, debido a que la acumulación del aire en la cavidad bucal hace que la presión infraglótica y supraglótica se igualen y con ello las cuerdas dejan de vibrar. Al igual que en las oclusivas sordas, en las sonoras el tramo correspondiente al cierre y el VOT se correlacionan con los puntos de articulación.</p>
+            <p class="card-text">Las ondas <b>azarosas</b>, también llamadas “ruido”, corresponden a los sonidos fricativos sordos. Son ondas aperiódicas, ya que, a diferencia de las periódicas, no presentan ciclos repetidos. Una onda de este tipo se muestra en el oscilograma de un fragmento de <a class="link-primary text-decoration-none text-charis" href="" data-bs-toggle="modal" ="" data-bs-target="#exampleModalCenter6">[ʃ]</a>. La fuente que las produce es la turbulencia que se crea cuando la corriente de aire pasa a través del estrechamiento formado por los articuladores. La diferencia esencial entre una onda compleja periódica y una aperiódica es que, al descomponerse en sus ondas simples correspondientes, las aperiódicas no son múltiplos de la frecuencia fundamental.</p>
+            <p class="card-text primeralinea">Las fricativas sonoras como <span class="text-charis">[ʒ, z]</span>, generan ondas que son azarosas y periódicas debido a que en su producción hay vibraciones periódicas y ruido por fricción. Esto se muestra en el oscilograma del fragmento de <a class="link-primary text-decoration-none text-charis" href="" data-bs-toggle="modal" ="" data-bs-target="#exampleModalCenter7">[ʒ]</a> que, comparado con el de <span class="text-charis">[ʃ]</span>, presenta picos cíclicos y fricción.</p>
+            <p class="card-text primeralinea">Los sonidos africados <span class="text-charis">[ʦ, ʧ]</span> producen ondas quietas y ondas azarosas. Las quietas resultan del momento de oclusión y las azarosas del momento de fricción. En el oscilograma de <a class="link-primary text-decoration-none text-charis" href="" data-bs-toggle="modal" ="" data-bs-target="#exampleModalCenter8">[ʦ]</a>se visualizan estos dos momentos de la africada: la onda quieta correspondiente al cierre, seguida del momento de fricción.</p>
+            <p class="text-center"><a class="btn btn-outline-primary" href="/fonetica-articulatoria/vocales">Vocales</a></p>
+          </div>
+        </div>
+      </main>
+
+
+
+
+<!-- Footer -->
+<?php include_once __DIR__ . "/../templates/footer.php"; ?>
+<?php
+    $script = "
+        <script src='../build/js/tipos-de-ondas.js'></script>
+    "
+?>
