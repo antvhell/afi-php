@@ -23,7 +23,7 @@
                     <div class="card-body">
                       <h5 class="card-title">Africadas</h5>
                       <p class="card-text">Los sonidos africados se articulan en dos tiempos. Primero se produce una obstrucción total del flujo de aire que viene de los pulmones, gracias al contacto de las diferentes partes de la lengua con distintas zonas del paladar. Después los articuladores que intervienen en cada uno de estos sonidos forman un estrecho canal por donde sale la corriente de aire provocando fricción. Hay africadas producidas con el movimiento de las cuerdas vocales y son <b>sonoras</b>; hay otras que se realizan con las cuerdas vocales separadas y son <b>sordas</b>.</p>
-                    </div><a class="btn btn-outline-primary d-grid" href="../fonetica-articulatoria/africadas/ʦ">Ver más...</a>
+                    </div><a class="btn btn-outline-primary d-grid" href="../fonetica-articulatoria/africadas/%CA%A6">Ver más...</a>
                   </div>
                 </div>
                 <div class="col mt-3">
